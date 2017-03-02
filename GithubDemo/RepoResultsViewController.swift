@@ -103,4 +103,18 @@ extension RepoResultsViewController: UISearchBarDelegate {
         searchBar.resignFirstResponder()
         doSearch()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let navController = segue.destination as! UINavigationController
+        let vc = navController.topViewController as! SearchSettingsViewController
+        vc.searchSettings = searchSettings
+    }
+    
+    
 }
+
+protocol SettingsPresentingViewControllerDelegate: class {
+    func didSaveSettings(settings: GithubRepoSearchSettings)
+    func didCancelSettings()
+}
+
