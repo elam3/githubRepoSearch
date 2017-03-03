@@ -4,7 +4,9 @@ Peer programming
 
 Team Repo:
 
-Mitchell Wong & Lum Situ
+Lum Situ & Edison Lam
 
 http://github.com/LumSt
-http://github.com/mitcho426
+https://github.com/elam3/githubRepoSearch
+
+![Github Demo Walkthru](http://i.imgur.com/zKJFmTK.gif)
